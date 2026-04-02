@@ -16,6 +16,7 @@ export function Services() {
       title: "Instalación de Riego Automatizado",
       description:
         "Implementamos sistemas de riego automatizado que reducen el consumo de agua y garantizan una hidratación eficiente. Adaptamos cada instalación según el tipo de suelo, vegetación y clima para optimizar su rendimiento y minimizar desperdicios",
+      image: "/modulo-wifi-riego.png",
     },
     {
       id: 3,
@@ -66,6 +67,13 @@ export function Services() {
               {expandedId === service.id && (
                 <div className="service-content">
                   <p>{service.description}</p>
+                  {service.image && (
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="service-image"
+                    />
+                  )}
                 </div>
               )}
             </div>

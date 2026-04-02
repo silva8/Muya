@@ -645,6 +645,14 @@ body {
   max-width: 80ch;
 }
 
+.service-image {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .services h2 {
     font-size: 2rem;
